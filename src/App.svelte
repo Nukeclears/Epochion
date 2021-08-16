@@ -1,7 +1,10 @@
 <script>
-    let text = 'texter';
+	export let name;
 </script>
 
 <main>
-    <button class="btn">{text}</button>
+	<button class="btn">please {name}!</button>
 </main>
+
+<style>
+</style>

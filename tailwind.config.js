@@ -2,21 +2,18 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
     mode: 'jit',
-    purge: ['src/**/*.{svelte,js,html}'],
+    purge: ['src/**/*'],
     safelist: ['dark'],
     darkMode: 'class',
     theme: {
-        extend: {
-        },
         fontFamily: {
             display: 'Montserrat, sans-serif',
             body: 'Noto Sans, sans-serif',
         },
-
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
-            gray: colors.coolGray,
+            gray: colors.trueGray,
             red: colors.red,
             amber: colors.amber,
             rose: colors.rose,
@@ -29,11 +26,7 @@ module.exports = {
             black: colors.black,
         },
     },
-    variants: {
-        extend: {
-        },
-    },
     plugins: [
         require('daisyui'),
-    ],
+    ]
 }
